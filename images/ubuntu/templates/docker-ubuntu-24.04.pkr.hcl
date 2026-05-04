@@ -9,7 +9,7 @@ packer {
 
 variable "base_image_tag" {
   type    = string
-  default = "2.331.0"
+  default = "2.333.1"
 }
 
 variable "artifact_image_repository" {

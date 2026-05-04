@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       runner_version:
-        description: 'GitHub Actions Runner version (e.g., 2.331.0)'
+        description: 'GitHub Actions Runner version (e.g., 2.333.1)'
         required: true
-        default: '2.331.0'
+        default: '2.333.1'
       image_version:
         description: 'Image version tag'
         required: true
@@ -39,7 +39,7 @@ permissions:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository_owner }}/actions-runner-slim
-  DEFAULT_RUNNER_VERSION: '2.331.0'
+  DEFAULT_RUNNER_VERSION: '2.333.1'
   DEFAULT_IMAGE_VERSION: '1.0.0'
 
 jobs:
