@@ -74,9 +74,7 @@ docker inspect -f "{{ .Size }}" "$IMAGE_NAME" | numfmt --to=iec | sed 's/^/Image
 # Ensure key software is installed and runnable
 run_test "GitHub CLI is installed" gh --version
 run_test "Azure CLI is installed" az version
-run_test "AWS CLI is installed" aws --version
 run_test "Session Manager plugin is installed" session-manager-plugin --version
-run_test "AWS SAM CLI is installed" sam --version
 run_test "jq is installed" jq --version
 run_test "git is installed" git --version
 run_test "node is installed" node --version
@@ -90,7 +88,6 @@ run_test "yq is installed" yq --version
 run_test "parallel is installed" parallel --version
 run_test "bc is installed" bc --version
 run_test "zstd is installed" zstd --version
-run_test "google cloud SDK is installed" gcloud --version
 run_test "git lfs is installed" git lfs version
 run_test "powershell is installed" pwsh --version
 run_test "docker-cli is installed" docker --version
